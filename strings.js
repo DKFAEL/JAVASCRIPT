@@ -38,9 +38,9 @@ console.log(texto.replace(/JavaScript/gi , 'PHP')) // Utilizando o gi, ele não 
 
 
 const html = '<!DOCTYPE html>\n<html></html>'
-console.log (html.startsWith('<!DOCTYPE html>'))  // determina se uma string  começa com os caracteres especificos, etornando true ou false
+console.log (html.startsWith('<!DOCTYPE html>'))  //  startsWith = determina se uma string  começa com os caracteres especificos, etornando true ou false
 console.log (html.startsWith('batata'))
-console.log(html.endsWith('</body>')) // conf
+console.log(html.endsWith('</body>')) // endsWith =  indica se uma string termina com determinado caracteres, retornando true ou false
 
 const mensagem = '                                                 Olá, mundo                 '
 console.log(mensagem)  
@@ -49,4 +49,4 @@ console.log(mensagem.trim())   // remove os espaços em excesso string
 let senha = 'coisasdesalvador'
 
 console.log(senha.length) // lenght = informa quantas caracteres tem a variavel
-console.log(senha.length >= 8)
+console.log(senha.length >= 8) // informa se  a senha e maior ou igual numero exigido (8)
