@@ -22,7 +22,7 @@ const media2 =(7. + 10 + 10) / 3
 const presença2 = 0.95
 console.log (media2 >= 7 && presença2 >= 0.8) // true
 
-//OPERADOR Ou (REPRESENTADO POR  ||)
+//OPERADOR Ou (REPRESENTADO POR  ||)   || = Ou
 
 /**
  * V V -> V

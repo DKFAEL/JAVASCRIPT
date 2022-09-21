@@ -9,7 +9,7 @@
 const msg = 'eu sou uma mensagem'
 const msg2 = ' eu sou a segunda mensagem'
 
-console.log(msg == msg2) // (False) == 
+console.log(msg == msg2) // (False) =  (  = atribui valor   == faz comparação)
 const num = 5
 const num2 = 5
 console.log (num == num2) // true
