@@ -21,13 +21,13 @@ Código Condição de pagamento
 // parseFloat = analisa um argumento string, e retornar um numero de ponto fluente
 
 const preçoProduto = parseFloat (prompt('Qual o Preço do produto?')) 
-const mensagem = `
-informe o método de pagamento:
-Digite 1 para pagamento em dinheiro
-digite 2 para pagamento em cheque
-digite 3 para pagamento em cartão`
+  const mensagem = `
+  informe o método de pagamento:
+  Digite 1 para pagamento em dinheiro
+  digite 2 para pagamento em cheque
+  digite 3 para pagamento em cartão`
 
-const metodoDePagamento = prompt(mensagem)
+  const metodoDePagamento = prompt(mensagem)
 
 console.log(preçoProduto)
 console.log(metodoDePagamento)
