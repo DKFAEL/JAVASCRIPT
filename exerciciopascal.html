@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*
+         1) Faça um programa em Javascript que leia um vetor de seis elementos numéricos inteiros, calcule e mostre:
+a) A quantidade de números pares
+b) Quais os números pares
+c) A quantidade de números ímpares
+d) Quais os números ímpares*/
+
+
+alert (`Faça um programa em Javascript que leia um vetor de seis elementos numéricos inteiros, calcule e mostre 
+A quantidade de números pares
+Quais os números pares 
+A quantidade de números ímpares
+Quais os números ímpares`)
+const numeros = [-19, -17, 10, 46, 18, -9, 1] 
+        let numerosNegativos = 0
+        let numerosPositivos = 0
+        let contadorNegativo = 0
+        let contadorPositivo = 0
+        for (let i of numeros) {
+            if( 0 > i){
+                contadorNegativo++
+                numerosNegativos -= i
+            }else if ( 0 < i){
+                contadorPositivo++  
+                numerosPositivos += i
+            }
+        }
+        alert(`
+        Quantidade de numeros negativos: ${contadorNegativo}
+        Numeros impares somados: -${numerosNegativos}
+        Quantidade de numeros positivos: ${contadorPositivo}
+        Numeros pares somados: ${numerosPositivos}`)
+
+        
+document.write(`<p> Quantidade de numeros negativos: ${contadorNegativo}</p>`)
+document.write(`<p>  numeros negativos somados : ${numerosNegativos}</p>`)
+document.write(`<p> Quantidade de numeros positivos: ${contadorPositivo}</p>`)
+document.write(`<p>   numeros positivos somados: ${numerosPositivos}</p>`)
+
+
+
+   
+    </script>
+</body>
+</html>
