@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+alert (`Faça um programa em Javascript que leia um vetor de 10 elementos numéricos inteiros, calcule e mostre 
+A quantidade de números pares
+Quais os números pares 
+A quantidade de números ímpares
+Quais os números ímpares`)
+const numeros = [-19, -17, 10, 46, 18, -9, 1, -9, -8, 10, 17] 
+        
+        let Positivos = 0
+        let Negativo = 0
+        
+        for (let i of numeros) {
+            if( 0 > i){
+                Negativo++
+                
+            }else if ( 0 < i){
+          
+                Positivos += i
+            }
+        }
+        alert(`
+        Quantidade de numeros negativos: ${Negativo} 
+        Numeros pares somados: ${Positivos}`)
+
+        
+document.write(`<p> Quantidade de numeros negativos: ${Negativo}</p>`)
+
+
+document.write(`<p>   numeros positivos somados: ${Positivos}</p>`)
+
+
+    </script>
+</body>
+</html>

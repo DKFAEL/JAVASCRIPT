@@ -16,9 +16,10 @@
         const qtdProdutos = parseInt(prompt('Informe a quantidade de produtos'));
 // ler o preço de cada produto e armazenar em um array
 const precosProdutos =[]
-for (let i = 0; i < qtdProdutos; i++){
+for (let i = 0; i < qtdProdutos; i++){  
     let preco = parseFloat(prompt('Informe o valor do produto ' + (i + 1)));
-    precosProdutos[i] = preco;
+    // precosProdutos[i] = preco /as duas maneiras sao iguais 
+    precosProdutos.push(preco)  //adiciona valores a um array
     console.log(precosProdutos);    
     document.write(`<p> O preço do produto ${(i+1)} é: ${precosProdutos[i]} </p>`);
 };
@@ -45,7 +46,7 @@ for (let preco of precosProdutos){
     if(preco > testeMaior){
         testeMaior = preco;
     }
-    if(preco < testeMenor){
+    if(preco < testeMenor)  {
         testeMenor = preco
     }
 }
