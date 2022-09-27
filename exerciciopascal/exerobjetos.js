@@ -8,7 +8,7 @@ let produto = {
     preco : 0,
     quantidade : 0, }
 
-    for (let i =1; i <= 3; i++) {
+    for (let i =1; i <= 15; i++) {
         produto.nome = prompt('Digite o nome do produto: ');
         produto.marca = prompt('Digite a Marca do produto')
         produto.foto = prompt('Insira o link da Imagem')
@@ -16,7 +16,7 @@ let produto = {
         estoque.push(produto)
     }
 
-    for ( let a =1; a <=3; a++) {
+    for ( let a =1; a <=15; a++) {
         let nome = estoque[0].nome
         let marca = estoque[0].marca
         let foto  = estoque[0].foto
