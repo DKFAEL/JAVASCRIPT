@@ -48,6 +48,8 @@ todoForm .addEventListener('submit', function(event){
 function renderizarTodos() {
     const todoListSection = document.querySelector('#todos-list')
 
+    todoListSection.innerHTML = ''
+
     for (let tarefa of todos) {
         /**
          * createElement é o método responsável por gerar novos elementos
@@ -69,6 +71,25 @@ function renderizarTodos() {
 
        const btnDelete = document.createElement('button')
        btnDelete.classList.add('btn','delete-todo')
+       /**
+        * arrow functions  SEMPRE anônimas
+        */
+      btnDelete.addEventListener('click', () => {
+        /**descobrir o índice do elemento dentro do array */
+
+        /**
+         * indexOf  informa em qual indice se encontra um determinado valor dentro do seu array
+         */
+        /**
+         * Se ele não achar o valor dentro do array, ele retorna -1
+         */
+       const index = todos.indexOf(tarefa)
+        /**
+         * splice serve para excluir um determinado valor do seu array  partir do seu indice
+         */
+       todos.splice(index, 1)
+       renderizarTodos()
+      })
 
        const spanIcon = document.createElement('span')
        spanIcon.classList.add('material-symbols-outlined')
